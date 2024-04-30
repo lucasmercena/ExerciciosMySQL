@@ -1,0 +1,13 @@
+-- 12.Liste o nome e o valor de todos os associados que possuem os planos B1, E1 e M1.
+SELECT 
+	ASSOCIADOS.NOME, 
+    ASSOCIADOS.PLANO,
+    PLANOS.VALOR 
+FROM 
+	PLANOS
+INNER JOIN ASSOCIADOS
+ON ASSOCIADOS.PLANO = PLANOS.NUMERO
+WHERE 
+	PLANOS.NUMERO IN ('B1', 'E1', 'M1')
+ORDER BY 
+	PLANO;

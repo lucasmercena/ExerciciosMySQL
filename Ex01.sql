@@ -1,0 +1,2 @@
+-- 1. Quais campos das tabelas associado e plano devem ser utilizados para efetuar o relacionamento entre as tabelas?
+	#RESPOSTA: O campo plano da tabela de ASSOCIADOS e o campo numero da tabela de PLANOS.
