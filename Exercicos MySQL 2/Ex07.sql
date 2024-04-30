@@ -1,0 +1,13 @@
+-- 7. Apresente uma relação com nome, plano e valor de todos os associados residentes na cidade de SÃO PAULO.
+SELECT	
+	ASSOCIADOS.NOME,
+    ASSOCIADOS.CIDADE, 
+    ASSOCIADOS.PLANO,
+    PLANOS.DESCRICAO,
+    PLANOS.VALOR
+FROM 
+	PLANOS
+INNER JOIN ASSOCIADOS
+ON ASSOCIADOS.PLANO = PLANOS.NUMERO
+WHERE
+	CIDADE = 'SAO PAULO';

@@ -1,0 +1,13 @@
+-- 21.Apresentar uma listagem dos planos que estão situados na faixa de valores de 300 até 500
+SELECT
+	ASSOCIADOS.NOME,
+    ASSOCIADOS.PLANO,
+    PLANOS.VALOR
+FROM
+	ASSOCIADOS
+JOIN PLANOS
+ON ASSOCIADOS.PLANO = PLANOS.NUMERO
+WHERE
+	PLANOS.VALOR
+BETWEEN 
+	300 AND 500;
